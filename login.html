@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem("fusion_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <title>Login | FUSION</title>
+  <meta name="description" content="Log in to your FUSION account and continue your healthy lifestyle plan.">
+  <link rel="canonical" href="login.html">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <span class="navbar__brand-mark" aria-hidden="true"><img src="images/icons/fusion-logo.png" alt="Fusion logo" class="navbar__brand-logo"></span>
+          <span>FUSION<span class="navbar__brand-tagline">A Healthy Lifestyle</span></span>
+        </a>
+        <div class="navbar__actions">
+          <button type="button" class="navbar__icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode"><svg class="icon icon--moon"><use href="images/icons/sprite.svg#icon-moon"></use></svg><svg class="icon icon--sun"><use href="images/icons/sprite.svg#icon-sun"></use></svg></button>
+          <a href="cart.html" class="navbar__icon-btn" id="cart-icon" aria-label="View cart"><svg class="icon"><use href="images/icons/sprite.svg#icon-cart"></use></svg><span class="navbar__badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="auth-page container">
+    <section class="auth-card reveal">
+      <div class="auth-mark"><svg class="icon icon--xl"><use href="images/icons/sprite.svg#icon-user"></use></svg></div>
+      <p class="eyebrow">Welcome back</p>
+      <h1>Log in to continue</h1>
+
+      <form id="login-form" action="#" method="post">
+        <label class="field-label" for="login-email">Email address</label>
+        <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+
+        <label class="field-label" for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+
+        <div class="auth-options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">Login</button>
+      </form>
+
+      <p class="auth-switch">Don’t have an account? <a href="signup.html">Create Account</a></p>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
